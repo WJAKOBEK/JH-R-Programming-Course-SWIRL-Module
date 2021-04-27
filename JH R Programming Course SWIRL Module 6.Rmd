@@ -1,20 +1,12 @@
-| In this lesson, we'll see how to extract elements from a vector based on some conditions that we specify.
 
-                                                                                                          |   3%
-| For example, we may only be interested in the first 20 elements of a vector, or only the elements that are not NA,
-| or only those that are positive or correspond to a specific variable of interest. By the end of this lesson, you'll
-| know how to handle each of these scenarios.
 
-...
-
-|==========================                                                                                   |  24%
-| The first element of num_vect is 0.5, which is less than 1 and therefore the statement 0.5 < 1 is TRUE. The second
+The first element of num_vect is 0.5, which is less than 1 and therefore the statement 0.5 < 1 is TRUE. The second
 | element of num_vect is 55, which is greater than 1, so the statement 55 < 1 is FALSE. The same logic applies for the
 | third and fourth elements.
 
 ...
 
-|=============================                                                                                |  26%
+  |=============================                                                                                |  26%
 | Let's try another. Type num_vect >= 6 without assigning the result to a new variable.
 
 > num_vect >= 6
@@ -63,7 +55,7 @@
 Selection: 2
 
 | Keep working like that and you'll get there!
-  
+
   |=================================================                                                            |  45%
 | (TRUE == TRUE) | (TRUE == FALSE)
 
@@ -73,7 +65,7 @@ Selection: 2
 Selection: 1
 
 | Keep up the great work!
-  
+
   |====================================================                                                         |  47%
 | ((111 >= 111) | !(TRUE)) & ((4 + 1) == 5)
 
@@ -151,7 +143,7 @@ Error: unexpected symbol in "my_char <- c(""My"
 
 | Perseverance, that's the answer.
 
-|==================================================================                                           |  61%
+  |==================================================================                                           |  61%
 | Right now, my_char is a character vector of length 3. Let's say we want to join the elements of my_char together
 | into one continuous character string (i.e. a character vector of length 1). We can do this using the paste()
 | function.
@@ -166,7 +158,7 @@ Error: unexpected symbol in "my_char <- c(""My"
 [1] "My name is"
 
 | That's a job well done!
-  
+
   |========================================================================                                     |  66%
 | The `collapse` argument to the paste() function tells R that when we join together the elements of the my_char
 | character vector, we'd like to separate them with single spaces.
@@ -175,12 +167,12 @@ Error: unexpected symbol in "my_char <- c(""My"
 
   |===========================================================================                                  |  68%
 | It seems that we're missing something.... Ah, yes! Your name!
-  
-  ...
 
-|=============================================================================                                |  71%
+...
+
+  |=============================================================================                                |  71%
 | To add (or 'concatenate') your name to the end of my_char, use the c() function like this: c(my_char,
-                                                                                               | "your_name_here"). Place your name in double quotes where I've put "your_name_here". Try it now, storing the result
+| "your_name_here"). Place your name in double quotes where I've put "your_name_here". Try it now, storing the result
 | in a new variable called my_name.
 
 > my_name <- c(my_char,"WZJ")
@@ -194,7 +186,7 @@ Error: unexpected symbol in "my_char <- c(""My"
 [1] "My"   "name" "is"   "WZJ" 
 
 | That's a job well done!
-  
+
   |===================================================================================                          |  76%
 | Now, use the paste() function once more to join the words in my_name together into a single character string. Don't
 | forget to say collapse = " "!
@@ -260,35 +252,35 @@ Error in collapse(ny_name, sep = "", My = , last = "") :
 [1] "1X" "2Y" "3Z"
 
 | All that practice is paying off!
-  
+
   |===============================================================================================              |  87%
 | What do you think will happen if our vectors are of different length? (Hint: we talked about this in a previous
-                                                                         | lesson.)
+| lesson.)
 
 ...
 
-|==================================================================================================           |  89%
+  |==================================================================================================           |  89%
 | Vector recycling! Try paste(LETTERS, 1:4, sep = "-"), where LETTERS is a predefined variable in R containing a
 | character vector of all 26 letters in the English alphabet.
 
 > paste(LETTERS, 1:4, sep = "-")
-[1] "A-1" "B-2" "C-3" "D-4" "E-1" "F-2" "G-3" "H-4" "I-1" "J-2" "K-3" "L-4" "M-1" "N-2" "O-3" "P-4" "Q-1" "R-2" "S-3"
+ [1] "A-1" "B-2" "C-3" "D-4" "E-1" "F-2" "G-3" "H-4" "I-1" "J-2" "K-3" "L-4" "M-1" "N-2" "O-3" "P-4" "Q-1" "R-2" "S-3"
 [20] "T-4" "U-1" "V-2" "W-3" "X-4" "Y-1" "Z-2"
 
 | Great job!
-  
+
   |====================================================================================================         |  92%
 | Since the character vector LETTERS is longer than the numeric vector 1:4, R simply recycles, or repeats, 1:4 until
 | it matches the length of LETTERS.
 
 ...
 
-|=======================================================================================================      |  95%
+  |=======================================================================================================      |  95%
 | Also worth noting is that the numeric vector 1:4 gets 'coerced' into a character vector by the paste() function.
 
 ...
 
-|==========================================================================================================   |  97%
+  |==========================================================================================================   |  97%
 | We'll discuss coercion in another lesson, but all it really means is that the numbers 1, 2, 3, and 4 in the output
 | above are no longer numbers to R, but rather characters "1", "2", "3", and "4".
 
@@ -311,21 +303,21 @@ Selection: 2
 1: R Programming
 2: R Programming E
 3: Take me to the swirl course repository!
-  
-  Selection: 2
+
+Selection: 2
 
 | Please choose a lesson, or type 0 to return to course menu.
 
-1: Basic Building Blocks      2: Workspace and Files        3: Sequences of Numbers    
-4: Vectors                    5: Missing Values             6: Subsetting Vectors      
-7: Matrices and Data Frames   8: Logic                      9: Functions               
+ 1: Basic Building Blocks      2: Workspace and Files        3: Sequences of Numbers    
+ 4: Vectors                    5: Missing Values             6: Subsetting Vectors      
+ 7: Matrices and Data Frames   8: Logic                      9: Functions               
 10: lapply and sapply         11: vapply and tapply         12: Looking at Data         
 13: Simulation                14: Dates and Times           15: Base Graphics           
 
 
 Selection: 5
 
-|                                                                                                             |   0%
+  |                                                                                                             |   0%
 
 | Missing values play an important role in statistics and data analysis. Often, missing values must not be ignored,
 | but rather they should be carefully studied to see if there's an underlying pattern or cause for their missingness.
@@ -338,7 +330,7 @@ Selection: 5
 
 ...
 
-|===========                                                                                                  |  10%
+  |===========                                                                                                  |  10%
 | Any operation involving NA generally yields NA as the result. To illustrate, let's create a vector c(44, NA, 5, NA)
 | and assign it to a variable x.
 
@@ -353,20 +345,20 @@ Selection: 5
 [1] 132  NA  15  NA
 
 | Excellent work!
-  
+
   |======================                                                                                       |  20%
 | Notice that the elements of the resulting vector that correspond with the NA values in x are also NA.
 
 ...
 
-|===========================                                                                                  |  25%
+  |===========================                                                                                  |  25%
 | To make things a little more interesting, lets create a vector containing 1000 draws from a standard normal
 | distribution with y <- rnorm(1000).
 
 > y <- rnorm(1000)
 
 | All that hard work is paying off!
-  
+
   |=================================                                                                            |  30%
 | Next, let's create a vector containing 1000 NAs with z <- rep(NA, 1000).
 
@@ -382,7 +374,7 @@ Selection: 5
 
 | Perseverance, that's the answer.
 
-|============================================                                                                 |  40%
+  |============================================                                                                 |  40%
 | Let's first ask the question of where our NAs are located in our data. The is.na() function tells us whether each
 | element of a vector is NA. Call is.na() on my_data and assign the result to my_na.
 
@@ -461,7 +453,7 @@ Error: unexpected symbol in "(my_data == NA yields"
  [77] NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA
 
 | That's a job well done!
-  
+
   |=================================================================                                            |  60%
 | The reason you got a vector of all NAs is that NA is not really a value, but just a placeholder for a quantity that
 | is not available. Therefore the logical expression is incomplete and R has no choice but to return a vector of the
@@ -469,25 +461,25 @@ Error: unexpected symbol in "(my_data == NA yields"
 
 ...
 
-|=======================================================================                                      |  65%
+  |=======================================================================                                      |  65%
 | Don't worry if that's a little confusing. The key takeaway is to be cautious when using logical expressions anytime
 | NAs might creep in, since a single NA value can derail the entire thing.
 
 ...
 
-|============================================================================                                 |  70%
+  |============================================================================                                 |  70%
 | So, back to the task at hand. Now that we have a vector, my_na, that has a TRUE for every NA and FALSE for every
 | numeric value, we can compute the total number of NAs in our data.
 
 ...
 
-|==================================================================================                           |  75%
+  |==================================================================================                           |  75%
 | The trick is to recognize that underneath the surface, R represents TRUE as the number 1 and FALSE as the number 0.
 | Therefore, if we take the sum of a bunch of TRUEs and FALSEs, we get the total number of TRUEs.
 
 ...
 
-|=======================================================================================                      |  80%
+  |=======================================================================================                      |  80%
 | Let's give that a try here. Call the sum() function on my_na to count the total number of TRUEs in my_na, and thus
 | the total number of NAs in my_data. Don't assign the result to a new variable.
 
@@ -495,7 +487,7 @@ Error: unexpected symbol in "(my_data == NA yields"
 [1] 47
 
 | You are quite good my friend!
-  
+
   |=============================================================================================                |  85%
 | Pretty cool, huh? Finally, let's take a look at the data to convince ourselves that everything 'adds up'. Print
 | my_data to the console.
@@ -528,25 +520,25 @@ Error: unexpected symbol in "(my_data == NA yields"
 
   |========================================================================================================     |  95%
 | Let's do one more, just for fun. In R, Inf stands for infinity. What happens if you subtract Inf from Inf?
-  
-  > inf-inf
+
+> inf-inf
 Error: object 'inf' not found
 > Inf - Inf
 [1] NaN
 
 | Nice work!
-  
+
   |=============================================================================================================| 100%
 | Would you like to inform someone about your successful completion of this lesson via email?
-  
-  1: Yes
+
+1: Yes
 2: No
 
 Selection: 2
 
 | You are quite good my friend!
-  
-  | You've reached the end of this lesson! Returning to the main menu...
+
+| You've reached the end of this lesson! Returning to the main menu...
 
 | Please choose a course, or type 0 to exit swirl.
 
@@ -575,7 +567,7 @@ Selection: 6
 
 ...
 
-|===                                                                                                          |   3%
+  |===                                                                                                          |   3%
 | For example, we may only be interested in the first 20 elements of a vector, or only the elements that are not NA,
 | or only those that are positive or correspond to a specific variable of interest. By the end of this lesson, you'll
 | know how to handle each of these scenarios.
@@ -584,31 +576,31 @@ Selection: 6
 
   |======                                                                                                       |   5%
 | I've created for you a vector called x that contains a random ordering of 20 numbers (from a standard normal
-                                                                                        | distribution) and 20 NAs. Type x now to see what it looks like.
+| distribution) and 20 NAs. Type x now to see what it looks like.
 
 > x
-[1]          NA          NA          NA          NA          NA  0.33678392  1.06535617  0.17621865          NA
+ [1]          NA          NA          NA          NA          NA  0.33678392  1.06535617  0.17621865          NA
 [10]          NA -0.96370366 -0.75006171 -0.09648514          NA          NA -0.41310524          NA          NA
 [19]          NA  1.57752171          NA          NA -0.19386832  0.21221505  1.08228267 -0.19859655          NA
 [28]  0.58339444 -0.59712583          NA  0.52399067  1.00806704          NA  0.21544417          NA -0.32520786
 [37]          NA -1.23324769 -0.81667962          NA
 
 | You are doing so well!
-  
+
   |========                                                                                                     |   8%
 | The way you tell R that you want to select some particular elements (i.e. a 'subset') from a vector is by placing an
 | 'index vector' in square brackets immediately following the name of the vector.
 
 ...
 
-|===========                                                                                                  |  10%
+  |===========                                                                                                  |  10%
 | For a simple example, try x[1:10] to view the first ten elements of x.
 
 > x[1:10]
-[1]        NA        NA        NA        NA        NA 0.3367839 1.0653562 0.1762187        NA        NA
+ [1]        NA        NA        NA        NA        NA 0.3367839 1.0653562 0.1762187        NA        NA
 
 | You nailed it! Good job!
-  
+
   |==============                                                                                               |  13%
 | Index vectors come in four different flavors -- logical vectors, vectors of positive integers, vectors of negative
 | integers, and vectors of character strings -- each of which we'll cover in this lesson.
@@ -623,10 +615,10 @@ Selection: 6
 
 ...
 
-|====================                                                                                         |  18%
+  |====================                                                                                         |  18%
 | What do you think x[is.na(x)] will give you?
-  
-  1: A vector of all NAs
+
+1: A vector of all NAs
 2: A vector of length 0
 3: A vector of TRUEs and FALSEs
 4: A vector with no NAs
@@ -646,15 +638,15 @@ Selection: 3
 Selection: 4
 
 | That's a job well done!
-  
+
   |======================                                                                                       |  21%
 | Prove it to yourself by typing x[is.na(x)].
 
 > x[is.na(x)]
-[1] NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA
+ [1] NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA
 
 | Excellent job!
-  
+
   |=========================                                                                                    |  23%
 | Recall that `!` gives us the negation of a logical expression, so !is.na(x) can be read as 'is not NA'. Therefore,
 | if we want to create a vector called y that contains all of the non-NA values from x, we can use y <- x[!is.na(x)].
@@ -663,17 +655,17 @@ Selection: 4
 > y <- x[!is.na(x)]
 
 | Great job!
-  
+
   |============================                                                                                 |  26%
 | Print y to the console.
 
 > y
-[1]  0.33678392  1.06535617  0.17621865 -0.96370366 -0.75006171 -0.09648514 -0.41310524  1.57752171 -0.19386832
+ [1]  0.33678392  1.06535617  0.17621865 -0.96370366 -0.75006171 -0.09648514 -0.41310524  1.57752171 -0.19386832
 [10]  0.21221505  1.08228267 -0.19859655  0.58339444 -0.59712583  0.52399067  1.00806704  0.21544417 -0.32520786
 [19] -1.23324769 -0.81667962
 
 | You are amazing!
-  
+
   |===============================                                                                              |  28%
 | Now that we've isolated the non-missing values of x and put them in y, we can subset y as we please.
 
@@ -693,16 +685,16 @@ Selection: 4
 Selection: 2
 
 | You're the best!
-  
+
   |====================================                                                                         |  33%
 | Type y[y > 0] to see that we get all of the positive elements of y, which are also the positive elements of our
 | original vector x.
 
 > y[y > 0]
-[1] 0.3367839 1.0653562 0.1762187 1.5775217 0.2122150 1.0822827 0.5833944 0.5239907 1.0080670 0.2154442
+ [1] 0.3367839 1.0653562 0.1762187 1.5775217 0.2122150 1.0822827 0.5833944 0.5239907 1.0080670 0.2154442
 
 | All that hard work is paying off!
-  
+
   |=======================================                                                                      |  36%
 | You might wonder why we didn't just start with x[x > 0] to isolate the positive elements of x. Try that now to see
 | why.
@@ -737,23 +729,23 @@ Selection: 2
 | Try x[!is.na(x) & x > 0] to see what you get.
 
 > x[!is.na(x) & x > 0]
-[1] 0.3367839 1.0653562 0.1762187 1.5775217 0.2122150 1.0822827 0.5833944 0.5239907 1.0080670 0.2154442
+ [1] 0.3367839 1.0653562 0.1762187 1.5775217 0.2122150 1.0822827 0.5833944 0.5239907 1.0080670 0.2154442
 
 | Excellent job!
-  
+
   |================================================                                                             |  44%
 | In this case, we request only values of x that are both non-missing AND greater than zero.
 
 ...
 
-|==================================================                                                           |  46%
+  |==================================================                                                           |  46%
 | I've already shown you how to subset just the first ten values of x using x[1:10]. In this case, we're providing a
 | vector of positive integers inside of the square brackets, which tells R to return only the elements of x numbered 1
 | through 10.
 
 ...
 
-|=====================================================                                                        |  49%
+  |=====================================================                                                        |  49%
 | Many programming languages use what's called 'zero-based indexing', which means that the first element of a vector
 | is considered element 0. R uses 'one-based indexing', which (you guessed it!) means the first element of a vector is
 | considered element 1.
@@ -767,7 +759,7 @@ Selection: 2
 > c((x 1,2,3))
 Error: unexpected numeric constant in "c((x 1"
 > c(x[1:10])
-[1]        NA        NA        NA        NA        NA 0.3367839 1.0653562 0.1762187        NA        NA
+ [1]        NA        NA        NA        NA        NA 0.3367839 1.0653562 0.1762187        NA        NA
 
 | Try again. Getting it right on the first try is boring anyway! Or, type info() for more options.
 
@@ -780,13 +772,13 @@ Error: unexpected numeric constant in "c((x 1"
 
   |===========================================================                                                  |  54%
 | It's important that when using integer vectors to subset our vector x, we stick with the set of indexes {1, 2, ...,
-  | 40} since x only has 40 elements. What happens if we ask for the zeroth element of x (i.e. x[0])? Give it a try.
+| 40} since x only has 40 elements. What happens if we ask for the zeroth element of x (i.e. x[0])? Give it a try.
 
 > x[0]
 numeric(0)
 
 | Keep up the great work!
-  
+
   |=============================================================                                                |  56%
 | As you might expect, we get nothing useful. Unfortunately, R doesn't prevent us from doing this. What if we ask for
 | the 3000th element of x? Try it out.
@@ -808,12 +800,12 @@ numeric(0)
 
 ...
 
-|======================================================================                                       |  64%
+  |======================================================================                                       |  64%
 | Luckily, R accepts negative integer indexes. Whereas x[c(2, 10)] gives us ONLY the 2nd and 10th elements of x,
 | x[c(-2, -10)] gives us all elements of x EXCEPT for the 2nd and 10 elements.  Try x[c(-2, -10)] now to see this.
 
 > x[c(-2, -10)]
-[1]          NA          NA          NA          NA  0.33678392  1.06535617  0.17621865          NA -0.96370366
+ [1]          NA          NA          NA          NA  0.33678392  1.06535617  0.17621865          NA -0.96370366
 [10] -0.75006171 -0.09648514          NA          NA -0.41310524          NA          NA          NA  1.57752171
 [19]          NA          NA -0.19386832  0.21221505  1.08228267 -0.19859655          NA  0.58339444 -0.59712583
 [28]          NA  0.52399067  1.00806704          NA  0.21544417          NA -0.32520786          NA -1.23324769
@@ -840,13 +832,13 @@ numeric(0)
 
 ...
 
-|==============================================================================                               |  72%
+  |==============================================================================                               |  72%
 | Create a numeric vector with three named elements using vect <- c(foo = 11, bar = 2, norf = NA).
 
 > vect <- c(foo = 11, bar = 2, norf = NA)
 
 | Excellent job!
-  
+
   |=================================================================================                            |  74%
 | When we print vect to the console, you'll see that each element has a name. Try it out.
 
@@ -942,8 +934,3 @@ foo bar
   |==========================================================================================================   |  97%
 | Now you know all four methods of subsetting data from vectors. Different approaches are best in different scenarios
 | and when in doubt, try it out!
-
-...
-
-  |=============================================================================================================| 100%
-| Would you like to inform someone about your successful completion of this lesson via email?
